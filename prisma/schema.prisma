@@ -52,7 +52,7 @@ model Product {
 
 model Order {
   id         String    @id @default(uuid())
-  tabel      Int
+  table      Int
   status     Boolean   @default(false)
   draft      Boolean   @default(true)
   created_at DateTime? @default(now())
