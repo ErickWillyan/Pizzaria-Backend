@@ -10,6 +10,10 @@ class ListItensOrderService {
       where: {
         order_id: order_id,
       },
+      include: {
+        product: true,
+        order: true,
+      },
     });
 
     return itens;
